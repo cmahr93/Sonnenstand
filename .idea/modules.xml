@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sonnenstand.iml" filepath="$PROJECT_DIR$/Sonnenstand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sonnenstand.iml" filepath="$PROJECT_DIR$/.idea/Sonnenstand.iml" />
     </modules>
   </component>
 </project>
