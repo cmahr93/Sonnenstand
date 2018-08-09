@@ -38,19 +38,32 @@ public class View extends Application {
         sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(sceneTitle, 0, 0, 2, 1);
 
-        Label userName  = new Label("User Name:");
-        grid.add(userName, 0, 1);
+        Label labelDate = new Label("Datum: ");
+        grid.add(labelDate, 0, 1);
+        TextField textFieldDate1 = new TextField();
+        grid.add(textFieldDate1, 1 ,1);
+        TextField textFieldDate2 = new TextField();
+        grid.add(textFieldDate2, 2,1);
+        TextField textFieldDate3 = new TextField();
+        grid.add(textFieldDate3, 3,1);
 
-        TextField userTextField = new TextField();
-        grid.add(userTextField, 1 ,1);
+        Label labelTime = new Label("Uhrzeit: ");
+        grid.add(labelTime, 0, 2);
+        TextField textFieldTime1 = new TextField();
+        grid.add(textFieldTime1, 1, 2);
+        TextField textFieldTime2 = new TextField();
+        grid.add(textFieldTime2, 2, 2);
+        TextField textFieldTime3 = new TextField();
+        grid.add(textFieldTime3, 3, 2);
 
-        Label pw = new Label("Password: ");
-        grid.add(pw, 0, 2);
+        Label labelLocation = new Label("Ort: ");
+        grid.add(labelLocation, 0, 3);
+        TextField textFieldLocation1 = new TextField();
+        grid.add(textFieldLocation1, 1, 3);
+        TextField textFieldLocation2 = new TextField();
+        grid.add(textFieldLocation2, 2, 3);
 
-        PasswordField pwBox = new PasswordField();
-        grid.add(pwBox, 1, 2);
-
-        Button button = new Button("Sign in");
+        Button button = new Button("Start");
         HBox hbButton = new HBox(10);
         hbButton.setAlignment(Pos.BOTTOM_RIGHT);
         hbButton.getChildren().add(button);
@@ -61,7 +74,7 @@ public class View extends Application {
 
         button.setOnAction(e -> {
             actionTarget.setFill(Color.FIREBRICK);
-            actionTarget.setText("Sign in button pressed");
+            actionTarget.setText("Sonnenhöhenwinkel: " + "Azimuth: "); //TODO: Ergebnis einfügen
         });
 
         Scene scene = new Scene(grid, 300, 275);
